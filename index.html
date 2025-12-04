@@ -1,1 +1,71 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fideli Software Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="logo">
+      <!-- Minimal dog logo icon -->
+      <svg width="48" height="48" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="#0D1B2A"/>
+        <path d="M12 24 L12 17 L18 11 L25 13 L28 18 L26 24 Z" fill="#E0B45C"/>
+        <path d="M18 11 L19 7 L23 10 L25 13 Z" fill="#E0B45C"/>
+        <circle cx="22" cy="17" r="1.2" fill="#0D1B2A"/>
+      </svg>
+    </div>
+    <h1>Fideli Software Inc.</h1>
+    <p class="tagline">From domain to deployment — complete web application delivery</p>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Fideli Software Inc. is a software development firm based in British Columbia, Canada.
+        Since 2020, we’ve built modern, reliable web applications for businesses across Canada.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Full-stack web application development</li>
+        <li>Domain, hosting, and infrastructure setup</li>
+        <li>Backend, frontend, and database design</li>
+        <li>Deployment, optimization, and ongoing improvements</li>
+      </ul>
+    </section>
+
+    <section id="industry">
+      <h2>Industry Experience</h2>
+      <p>
+        We work with mid to large insurance brokerages in Canada, as well as clients in other sectors.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For inquiries:</p>
+      <p><a href="mailto:mario@fidelisoftware.com">mario@fidelisoftware.com</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Fideli Software Inc.
+  </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
